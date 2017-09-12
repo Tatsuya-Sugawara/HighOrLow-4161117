@@ -10,22 +10,26 @@ public class HoLMain{
 		int x;
 		while(end == false){
 			int card = rnd.nextInt(12) + 1;
+			System.out.println("初期値は8です");
 			System.out.print("High=1 Low=2：");
 			x = sc.nextInt();
-			System.out.println("数値は"+card);
 			if(x == 1){
 				if(card >= eight){
+					System.out.println("数値は"+card);
 					System.out.println("正解");
 				}
 				else{
+					System.out.println("数値は"+card);
 					System.out.println("不正解");
 				}
 			}
 			else if(x == 2){
 				if(card < eight){
+					System.out.println("数値は"+card);
 					System.out.println("正解");
 				}
 				else{
+					System.out.println("数値は"+card);
 					System.out.println("不正解");
 				}
 			}
@@ -38,5 +42,6 @@ public class HoLMain{
 				end = true;
 			}
 		}
+		System.exit(0);
 	}
 }
